@@ -1,11 +1,11 @@
 import java.util.*;
 class Student {
-   private int studentId;
-   private String   studentName;
-   private  String studnentRollNo;
    
-    //////create constructor
-      
+	private int studentId;
+   	private String   studentName;
+   	private  String studnentRollNo;
+   
+    //////create constructor   
 	   Student( int studentId, String studentName, String studnentRollNo){
 		       
 			   this.studentId= studentId;
@@ -26,7 +26,7 @@ class Student {
 				}
 				
 				    public String toString(){
-						return studentId+" "+studentName+" "+studnentRollNo;
+						return "Student ID:"+ studentId +"\t Student Name "+studentName+"\t Student RollNumber "+studnentRollNo;
 					}
 					
 } 	  
@@ -37,7 +37,7 @@ class Student {
 							List<Student> c = new ArrayList<Student>();
                        	  Scanner  s=new Scanner( System.in);
 						  Scanner s1=new Scanner(System.in);
-						  int ch;
+						  int choice;
 						  do{ 
 						   System.out.println(" ---------Select the Appropirate option----------");
 							  System.out.println("1. ADD ");
@@ -47,9 +47,9 @@ class Student {
 							  System.out.println("5. Go Back menu  ");
 							 
 							  System.out.println(" ENTER  UR CHOICE");
-							  ch = s.nextInt();
+							  choice = s.nextInt();
 							  
-							  switch (ch){
+							  switch (choice){
 								  case 1:
 								  
 								  char y;
